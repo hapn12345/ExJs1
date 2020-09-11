@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body onload="renderListStudent()">
+	<div class="form-student">
+		<h3>Thông Tin Sinh Viên</h3>
+		<label>Mã Sinh Viên</label>
+		<input type="text" id="id">
+		<span id="id-error" class="error"></span>
+		<br>
+		<label>Tên Sinh Viên</label>
+		<input type="text" id="name">
+		<span id="name-error" class="error"></span>
+		<br>
+		<label>Email</label>
+		<input type="text" id="email">
+		<span id="email-error" class="error"></span>
+		<br>
+		<label>&nbsp;</label>
+		<button id="btn-save">Save</button>
+	</div>
+	<div class="list-student" id="list-student">
+		<h3>Danh Sách Sinh Viên</h3>
+	    <table id="grid-students">
+
+	    </table>
+	</div>
+	<script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="./js/student.js"></script> 
+</body>
+
+</html>
